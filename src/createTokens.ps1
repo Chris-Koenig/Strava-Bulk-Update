@@ -1,7 +1,5 @@
 . ".\lib\Authentication.ps1"
 
-
-
 # Take the secret from your  strava app registration
 $client_secret = "" 
 
