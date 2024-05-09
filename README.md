@@ -1,4 +1,4 @@
-# Strava API Caller
+# Strava Bulk Update
  
 This repository provides a powershell tool for interfacing with the Strava API to perform bulk updates on activities in your Strava profile.
 
