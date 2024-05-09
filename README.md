@@ -16,7 +16,7 @@ With your CLIENT ID from the first step create an authorization code by calling 
 http://www.strava.com/oauth/authorize?client_id=[CLIENT_ID]&response_type=code&redirect_uri=http://localhost/exchange_token&approval_prompt=force&scope=read_all,activity:write,activity:read,profile:read_all
 
 You'll see this page - please confirm
-![Alt text](ressources/image.png "a title")
+![Alt text](res/image.png "a title")
 
 
 ### Third:
