@@ -1,8 +1,7 @@
 . ".\lib\Authentication.ps1"
 . ".\lib\Activities.ps1"
 
-Write-Information "Start export all strava activities"
-Write-Information "Get AccessToken from Authentication API"
+Write-host "Start export all strava activities"
 
 # create the access token with createToken.ps1 in this directory
 $accessToken = $Env:StravaAccessToken
@@ -32,5 +31,7 @@ foreach ($activity in $importedActivities) {
     Update-StravaActivity -accessToken $accessToken -activityId $activity.id -body $body
     $counter++
 }
+
+Write-host "Import done"
 
 
