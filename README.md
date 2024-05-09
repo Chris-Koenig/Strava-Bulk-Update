@@ -19,7 +19,7 @@ You'll see this page - please confirm
 ![Alt text](ressources/image.png "a title")
 
 
-### Third:
+### Third:
 - Create the access token with the createToken.ps1 script
 - run exportActivities.ps1 and Edit your activities in Excel (CSV)
 - run importActivities.ps1 to upload your changes to strava
