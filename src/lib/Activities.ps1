@@ -61,7 +61,3 @@ function Update-StravaActivity {
     }
     
 }
-
-function Update-Strava-Activity {
-
-}
