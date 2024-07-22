@@ -61,3 +61,30 @@ function Update-StravaActivity {
     }
     
 }
+<<<<<<< Updated upstream
+=======
+
+# Function to get all activities
+function Get-StravaActivities {
+    [CmdletBinding()]
+    param (
+        [string]$accessToken,
+        [int]$pageSize = 200,
+        [int]$maxPages = 10
+    )
+
+    $allActivities = @()
+    for ($page = 1; $page -le $maxPages; $page++) {
+        $uri = "https://www.strava.com/api/v3/athlete/activities?access_token=$accessToken&per_page=$pageSize&page=$page"
+        $activities = Invoke-RestMethod -Uri $uri -Method Get
+
+        if ($activities.Count -eq 0) {
+            break
+        }
+
+        $allActivities += $activities
+    }
+
+    return $allActivities
+}
+>>>>>>> Stashed changes
