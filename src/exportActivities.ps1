@@ -16,3 +16,5 @@ $activities = Get-StravaActivities -accessToken $accessToken
 $activities | Export-Csv -Path "AllActivities.csv" -NoTypeInformation
 
 Write-Host "Export done"
+
+Write-Host "Goodbye! Thank you for using Strava Bulk Update." -ForegroundColor Green

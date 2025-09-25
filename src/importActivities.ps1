@@ -34,4 +34,6 @@ foreach ($activity in $importedActivities) {
 
 Write-host "Import done"
 
+Write-Host "Goodbye! Thank you for using Strava Bulk Update." -ForegroundColor Green
+
 
