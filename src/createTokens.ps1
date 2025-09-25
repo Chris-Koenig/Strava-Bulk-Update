@@ -13,3 +13,5 @@ $tokens = Get-Strava-Token -client_id $client_id -client_secret $client_secret -
 
 # Save the access token to an environment variable.
 $Env:StravaAccessToken = $tokens.access_token
+
+Write-Host "Goodbye! Thank you for using Strava Bulk Update." -ForegroundColor Green
